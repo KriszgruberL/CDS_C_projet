@@ -1,0 +1,18 @@
+# depslib dependency file v1.0
+1710184431 source:c:\users\lkris\onedrive\bureau\bac info gestion\752105ud2 - principes algorithmiques et programmation\c_projet_final\main.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"perso.h"
+
+1710177866 source:c:\users\lkris\onedrive\bureau\bac info gestion\752105ud2 - principes algorithmiques et programmation\c_projet_final\perso.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<ctype.h>
+	<stdlib.h>
+	"perso.h"
+
+1708365090 c:\users\lkris\onedrive\bureau\bac info gestion\752105ud2 - principes algorithmiques et programmation\c_projet_final\perso.h
+	<time.h>
+
