@@ -31,9 +31,28 @@
 		<Compiler>
 			<Add option="-Wall" />
 		</Compiler>
+		<Unit filename="Article.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="Article.h" />
+		<Unit filename="Customer.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="Customer.h" />
+		<Unit filename="Order.c">
+			<Option compilerVar="CC" />
+			<Option target="&lt;{~None~}&gt;" />
+		</Unit>
+		<Unit filename="Order.h">
+			<Option target="&lt;{~None~}&gt;" />
+		</Unit>
 		<Unit filename="main.c">
 			<Option compilerVar="CC" />
 		</Unit>
+		<Unit filename="mainController.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="mainController.h" />
 		<Unit filename="perso.c">
 			<Option compilerVar="CC" />
 		</Unit>

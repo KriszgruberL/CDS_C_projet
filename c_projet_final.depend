@@ -1,9 +1,8 @@
 # depslib dependency file v1.0
-1710184431 source:c:\users\lkris\onedrive\bureau\bac info gestion\752105ud2 - principes algorithmiques et programmation\c_projet_final\main.c
+1711384300 source:c:\users\lkris\onedrive\bureau\bac info gestion\752105ud2 - principes algorithmiques et programmation\c_projet_final\main.c
 	<stdio.h>
 	<stdlib.h>
-	<string.h>
-	"perso.h"
+	"mainController.h"
 
 1710177866 source:c:\users\lkris\onedrive\bureau\bac info gestion\752105ud2 - principes algorithmiques et programmation\c_projet_final\perso.c
 	<stdio.h>
@@ -15,4 +14,51 @@
 
 1708365090 c:\users\lkris\onedrive\bureau\bac info gestion\752105ud2 - principes algorithmiques et programmation\c_projet_final\perso.h
 	<time.h>
+
+1711387634 c:\users\lkris\onedrive\bureau\bac info gestion\752105ud2 - principes algorithmiques et programmation\c_projet_final\maincontroller.h
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"perso.h"
+	"Customer.h"
+	"Article.h"
+
+1711380644 c:\users\lkris\onedrive\bureau\bac info gestion\752105ud2 - principes algorithmiques et programmation\c_projet_final\custcontroller.h
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"perso.h"
+
+1711384301 c:\users\lkris\onedrive\bureau\bac info gestion\752105ud2 - principes algorithmiques et programmation\c_projet_final\articlecontroller.h
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"perso.h"
+
+1711384302 source:c:\users\lkris\onedrive\bureau\bac info gestion\752105ud2 - principes algorithmiques et programmation\c_projet_final\articlecontroller.c
+	"articleController.h"
+
+1711384301 source:c:\users\lkris\onedrive\bureau\bac info gestion\752105ud2 - principes algorithmiques et programmation\c_projet_final\custcontroller.c
+	"custController.h"
+
+1711390134 source:c:\users\lkris\onedrive\bureau\bac info gestion\752105ud2 - principes algorithmiques et programmation\c_projet_final\maincontroller.c
+	"mainController.h"
+
+1711391173 source:c:\users\lkris\onedrive\bureau\bac info gestion\752105ud2 - principes algorithmiques et programmation\c_projet_final\article.c
+	"Article.h"
+
+1711391069 c:\users\lkris\onedrive\bureau\bac info gestion\752105ud2 - principes algorithmiques et programmation\c_projet_final\article.h
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"perso.h"
+
+1711390490 source:c:\users\lkris\onedrive\bureau\bac info gestion\752105ud2 - principes algorithmiques et programmation\c_projet_final\customer.c
+	"Customer.h"
+
+1711390134 c:\users\lkris\onedrive\bureau\bac info gestion\752105ud2 - principes algorithmiques et programmation\c_projet_final\customer.h
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"perso.h"
 
