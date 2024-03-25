@@ -5,6 +5,7 @@
 #include <stdlib.h>
 #include <string.h>
 #include "perso.h"
+#include "Customer.h"
 
 #define MAX 20
 
@@ -35,12 +36,12 @@ struct Order_ctrl {
 typedef struct Order_ctrl Order_ctrl;
 
 void initOrder(Order *);
-void displayOrder(Order);
-void createOrder(Order *,Order_ctrl *);
-void updateOrder(Order *);
+void displayOrder(Order, Customer *);
+void createOrder(Order *, Order_ctrl *, Customer *, Customer_ctrl *);
 void deleteOrder(Order *, Order_ctrl *);
 void cleanOrder(Order *,Order_ctrl *);
 void nextOrder(Order *, Order_ctrl *);
 void previousOrder(Order *, Order_ctrl *);
+int selectOrder(Order *,Order_ctrl *);
 
 #endif // ORDER_H_INCLUDED

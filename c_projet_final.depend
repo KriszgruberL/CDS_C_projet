@@ -1,10 +1,10 @@
 # depslib dependency file v1.0
-1711384300 source:c:\users\lkris\onedrive\bureau\bac info gestion\752105ud2 - principes algorithmiques et programmation\c_projet_final\main.c
+1711395165 source:c:\users\lkris\onedrive\bureau\bac info gestion\752105ud2 - principes algorithmiques et programmation\c_projet_final\main.c
 	<stdio.h>
 	<stdlib.h>
 	"mainController.h"
 
-1710177866 source:c:\users\lkris\onedrive\bureau\bac info gestion\752105ud2 - principes algorithmiques et programmation\c_projet_final\perso.c
+1711393444 source:c:\users\lkris\onedrive\bureau\bac info gestion\752105ud2 - principes algorithmiques et programmation\c_projet_final\perso.c
 	<stdio.h>
 	<stdlib.h>
 	<string.h>
@@ -12,16 +12,17 @@
 	<stdlib.h>
 	"perso.h"
 
-1708365090 c:\users\lkris\onedrive\bureau\bac info gestion\752105ud2 - principes algorithmiques et programmation\c_projet_final\perso.h
+1711393467 c:\users\lkris\onedrive\bureau\bac info gestion\752105ud2 - principes algorithmiques et programmation\c_projet_final\perso.h
 	<time.h>
 
-1711387634 c:\users\lkris\onedrive\bureau\bac info gestion\752105ud2 - principes algorithmiques et programmation\c_projet_final\maincontroller.h
+1711394752 c:\users\lkris\onedrive\bureau\bac info gestion\752105ud2 - principes algorithmiques et programmation\c_projet_final\maincontroller.h
 	<stdio.h>
 	<stdlib.h>
 	<string.h>
 	"perso.h"
 	"Customer.h"
 	"Article.h"
+	"Order.h"
 
 1711380644 c:\users\lkris\onedrive\bureau\bac info gestion\752105ud2 - principes algorithmiques et programmation\c_projet_final\custcontroller.h
 	<stdio.h>
@@ -41,7 +42,7 @@
 1711384301 source:c:\users\lkris\onedrive\bureau\bac info gestion\752105ud2 - principes algorithmiques et programmation\c_projet_final\custcontroller.c
 	"custController.h"
 
-1711390134 source:c:\users\lkris\onedrive\bureau\bac info gestion\752105ud2 - principes algorithmiques et programmation\c_projet_final\maincontroller.c
+1711395357 source:c:\users\lkris\onedrive\bureau\bac info gestion\752105ud2 - principes algorithmiques et programmation\c_projet_final\maincontroller.c
 	"mainController.h"
 
 1711391173 source:c:\users\lkris\onedrive\bureau\bac info gestion\752105ud2 - principes algorithmiques et programmation\c_projet_final\article.c
@@ -61,4 +62,11 @@
 	<stdlib.h>
 	<string.h>
 	"perso.h"
+
+1711396150 c:\users\lkris\onedrive\bureau\bac info gestion\752105ud2 - principes algorithmiques et programmation\c_projet_final\order.h
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"perso.h"
+	"Customer.h"
 

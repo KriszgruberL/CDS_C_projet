@@ -7,6 +7,8 @@ void Main_Ctrl(){
     Customer listCustomers[MAX];
     Article_ctrl artCtrl ={0,0,0,0,0};
     Article listArticles[MAX];
+    Order_ctrl orderCtrl ={0,0,0,0,0};
+    Order listOrders[MAX];
 
     do
     {
@@ -15,6 +17,7 @@ void Main_Ctrl(){
         printf("\n*******************");
         printf("\n1. Manage Customer");
         printf("\n2. Manage Article");
+        printf("\n3. Manage Order");
         printf("\n9. Exit");
         printf("\n Please enter your choice : ");
         i_ch=lireInt();
@@ -26,6 +29,9 @@ void Main_Ctrl(){
                     break;
             case 2 :
                     Article_Ctrl(listArticles, &artCtrl);
+                    break;
+            case 3 :
+                    Order_Ctrl(listOrders, &orderCtrl, listCustomers, &custCtrl);
                     break;
             case 9 :
                     printf("\nBye bye");
@@ -238,4 +244,104 @@ void Article_Ctrl(Article *listArticles, Article_ctrl *artCtrl){
 
 }
 
+void Order_Ctrl(Order *listOrders, Order_ctrl *orderCtrl, Customer *listCustomers, Customer_ctrl *custCtrl){
+    int i_ch=0;
+    do
+    {
+        if(orderCtrl->i_nbAffichable==0)
+        {
+            do
+            {
+                system("cls");
+                printf("\nManagement Order");
+                printf("\n*******************");
+                printf("\n1. Create Order");
+                printf("\n9. Back to main menu");
+                printf("\n Please enter your choice : ");
+                i_ch=lireInt();
+
+                switch(i_ch)
+                {
+                    case 1 :
+                            createOrder(&listOrders[orderCtrl->i_PK],orderCtrl, &listCustomers, custCtrl);
+                            cleanOrder(listOrders, orderCtrl);
+                            break;
+                    case 9 :
+                            printf("\n back to main menu");
+                            getchar();
+                            break;
+                    default :
+                            printf("\n Wrong choice, try again");
+
+                }
+            }while(i_ch!=1 && i_ch!=9);
+        }
+        else
+        {
+            do
+            {
+                system("cls");
+                displayOrder(listOrders[orderCtrl->i_current], listCustomers);
+                printf("\n\nManagement Order");
+                printf("\n*******************");
+                printf("\n1. Create Order");
+                printf("\n2. Update Order");
+                printf("\n3. Delete");
+                printf("\n4. Next");
+                printf("\n5. Previous");
+                printf("\n6. First");
+                printf("\n7. Last");
+                printf("\n8. Select");
+                printf("\n9. back to main menu");
+                printf("\n Please enter your choice : ");
+                i_ch=lireInt();
+
+                switch(i_ch)
+                {
+                    case 1 :
+                            createOrder(&listOrders[orderCtrl->i_PK],orderCtrl, &listCustomers, custCtrl);
+                            cleanOrder(listOrders,orderCtrl);
+                            break;
+                    case 2 :
+                            printf("\nUpdate unavailable here");
+                            getchar();
+                            break;
+                    case 3 :
+                            deleteOrder(&listOrders[orderCtrl->i_current],orderCtrl);
+                            cleanOrder(listOrders,orderCtrl);
+
+                            if ( orderCtrl->i_nbAffichable != 0 ){
+                                orderCtrl->i_current = orderCtrl->i_first;
+                            }
+                            break;
+
+                    case 4 :
+                            nextOrder(listOrders, orderCtrl);
+                            break;
+                    case 5 :
+                            previousOrder(listOrders,orderCtrl);
+                            break;
+                    case 6 :
+                            orderCtrl->i_current=orderCtrl->i_first;
+                            break;
+                    case 7 :
+                            orderCtrl->i_current=orderCtrl->i_last;
+                            break;
+                    case 8 :
+                            selectOrder(listOrders,orderCtrl);
+                            break;
+                    case 9 :
+                            printf("\n back to main menu");
+                            getchar();
+                            break;
+                    default :
+                            printf("\n Wrong choice, try again");
+                            getchar();
+
+                }
+            }while(i_ch!=9&&orderCtrl->i_nbAffichable!=0);
+        }
+    }while(i_ch!=9);
+
+}
 
